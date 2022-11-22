@@ -10,13 +10,11 @@
 
 let container = document.querySelector(".container_img")
 
-let element = document.createElement("div")
+container.innerHTML = `<img class="img_size" src="img/01.webp" alt=""></div>`
 
-element.innerHTML = `<img src="img/01.webp" alt="">`
-element.classList.add("img_size")
+console.log(container)
 
 
-console.log(element)
 // Milestone 1:
 // Ora rimuoviamo i contenuti statici e usiamo l’array di oggetti letterali per popolare dinamicamente il carosello.
 
