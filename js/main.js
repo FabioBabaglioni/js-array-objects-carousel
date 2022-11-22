@@ -10,9 +10,7 @@
 
 let container = document.querySelector(".container_img")
 
-// container.innerHTML = `<img class="img_size" src="img/01.webp" alt="">`
-
-container.appendChild = `<img class="img_size" src="img/01.webp" alt="">`
+container.innerHTML = `<img class="img_size" src="img/01.webp" alt="">`
 
 console.log(container)
 
