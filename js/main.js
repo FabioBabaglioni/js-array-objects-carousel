@@ -55,27 +55,36 @@ let next = document.getElementById("next")
 let previous = document.getElementById("previous")
 
 
+
 next.addEventListener("click",
 
-    images.forEach(immmagine, index) => {
+    function(){
 
-        let element = document.createElement("div")
+        images.forEach((images, index) => {
 
-        element.innerHTML = `<img class="img_size" src="${images.image}" alt="">`
+            let element = document.createElement("div")
 
-        element.classList.add("container_img")
+            element.innerHTML = `<img class="img_size" src="${images.image}" alt="">`
 
-        if(index === 0){
-            element.classList.add("Active")
-        }else{
-            element.classList.add("none")
-        }
+            element.classList.add("container_img")
 
-        container.append(element)
-        }
-    )
+            if(index === 0){
+                element.classList.add("Active")
+            }else{
+                element.classList.add("none")
+            }
 
-);   
+            container.append(element)
+        
+            }
+
+        )
+    
+    }
+)
+
+    
+
 
 // Al click dell’utente sulle frecce, l’immagine attiva diventerà visibile e dovremo aggiungervi titolo e testo.
 
